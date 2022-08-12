@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/schedule_activity_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3"
+    tools:context=".ScheduleActivity">
+
+    <Button
+        android:id="@+id/imt2021_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMT2021"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2021_tv"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/img2021_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMG2021"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2021_tv"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/y2020_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <Button
+        android:id="@+id/bcs2019_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="BCS2019"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/y2020_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2019_tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/y2018_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <Button
+        android:id="@+id/imt2018_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMT2018"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/y2019_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2018_tv"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <Button
+        android:id="@+id/bcs2020_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BCS2020"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/y2021_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2020_tv"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <TextView
+        android:id="@+id/y2019_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <Button
+        android:id="@+id/img2020_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMG2020"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/y2021_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2020_tv"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <Button
+        android:id="@+id/imt2019_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMT2019"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/y2020_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2019_tv"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <Button
+        android:id="@+id/img2019_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMG2019"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/y2020_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2019_tv"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/y2021_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+    <Button
+        android:id="@+id/bcs2021_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BCS2021"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2021_tv"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/img2018_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMG2018"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/y2019_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2018_tv"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <Button
+        android:id="@+id/imt2020_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMT2020"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/y2021_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y2020_tv"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <Button
+        android:id="@+id/detect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detect your batch"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <Button
+        android:id="@+id/global_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combined Time Table"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

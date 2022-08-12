@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/drawable/blue_curved_background.xml" value="0.341" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/drawable/circlebackground.xml" value="0.341" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/drawable/gray_cruved_background.xml" value="0.225" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/drawable/mybutton.xml" value="0.2185" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_display_faculty.xml" value="0.33" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_display_student.xml" value="0.33" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_faculty.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_maps.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_mess.xml" value="0.33" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_more.xml" value="0.21145833333333333" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_places.xml" value="0.35260416666666666" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_profile.xml" value="0.33" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_register.xml" value="0.16" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_schedule.xml" value="0.33" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/activity_search.xml" value="0.25" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/faculty_card.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/filter_popup.xml" value="0.21145833333333333" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/imagepopup.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/login_google_button.xml" value="0.33" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/place_card.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/layout/student_card.xml" value="0.5" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/menu/menu2.xml" value="0.21145833333333333" />
+        <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

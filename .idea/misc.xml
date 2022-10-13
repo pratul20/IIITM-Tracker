@@ -28,6 +28,15 @@
         <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
         <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/menu/menu2.xml" value="0.21145833333333333" />
         <entry key="..\:/MyPrograms/Android/IIITMTracker/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />
+        <entry key="..\:/msys64/home/erexi/contributions/IIITM-Tracker/app/src/main/res/layout/activity_display_faculty.xml" value="0.38697916666666665" />
+        <entry key="..\:/msys64/home/erexi/contributions/IIITM-Tracker/app/src/main/res/layout/activity_display_student.xml" value="0.38697916666666665" />
+        <entry key="..\:/msys64/home/erexi/contributions/IIITM-Tracker/app/src/main/res/layout/activity_profile.xml" value="0.38697916666666665" />
+        <entry key="..\:/msys64/home/erexi/contributions/IIITM-Tracker/app/src/main/res/layout/activity_search.xml" value="0.38697916666666665" />
+        <entry key="..\:/msys64/home/erexi/contributions/IIITM-Tracker/app/src/main/res/layout/faculty_card.xml" value="0.38697916666666665" />
+        <entry key="..\:/msys64/home/erexi/contributions/IIITM-Tracker/app/src/main/res/layout/imagepopup.xml" value="0.38697916666666665" />
+        <entry key="..\:/msys64/home/erexi/contributions/IIITM-Tracker/app/src/main/res/layout/login_google_button.xml" value="0.38697916666666665" />
+        <entry key="..\:/msys64/home/erexi/contributions/IIITM-Tracker/app/src/main/res/layout/place_card.xml" value="0.38697916666666665" />
+        <entry key="..\:/msys64/home/erexi/contributions/IIITM-Tracker/app/src/main/res/layout/student_card.xml" value="0.33" />
       </map>
     </option>
   </component>

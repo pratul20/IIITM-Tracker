@@ -23,6 +23,7 @@ import com.example.iiitmtracker.R;
 import com.example.iiitmtracker.SearchActivity;
 import com.example.iiitmtracker.model.Faculty;
 import com.example.iiitmtracker.model.Student;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -99,22 +100,22 @@ public class StudentRecyclerViewAdapter extends RecyclerView.Adapter<StudentRecy
         public ImageView student_card_image_iv;
         public ImageView call_iv;
         public ImageView whatsapp_iv;
-//        public Dialog myDialog;
-//        public ImageView popup_iv;
+        public Dialog myDialog;
+        public ImageView popup_iv;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
-//            myDialog = new Dialog(context);
+            myDialog = new Dialog(context);
 
             student_roll_no_tv = itemView.findViewById(R.id.roll_no_tv);
             student_card_name_tv = itemView.findViewById(R.id.place_name_tv);
             student_card_image_iv = itemView.findViewById(R.id.place_image_iv);
             call_iv = itemView.findViewById(R.id.call_iv);
             whatsapp_iv = itemView.findViewById(R.id.whatsapp_iv);
-//            myDialog.setContentView(R.layout.imagepopup);
-//            popup_iv = myDialog.findViewById(R.id.popup_iv);
+            myDialog.setContentView(R.layout.imagepopup);
+            popup_iv = myDialog.findViewById(R.id.popup_iv);
 
             call_iv.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -153,13 +154,23 @@ public class StudentRecyclerViewAdapter extends RecyclerView.Adapter<StudentRecy
                 }
             });
 
-//            student_card_image_iv.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//                    myDialog.show();
-//                }
-//            });
+            student_card_image_iv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position =getAbsoluteAdapterPosition();
+                    Student student = studentArrayList.get(position);
+                    if(student.getImage_link().isEmpty()){
+                        Toast.makeText(context.getApplicationContext(), "Image not available!", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        Picasso.get().load(student.getImage_link()).into(popup_iv);
+                        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                        myDialog.show();
+                        String d=student.getImage_link();
+                    }
+                }
+            });
         }
 
         @Override

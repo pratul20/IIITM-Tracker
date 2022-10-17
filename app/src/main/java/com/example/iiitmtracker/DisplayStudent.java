@@ -285,7 +285,7 @@ public class DisplayStudent extends AppCompatActivity {
                     myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
                     myDialog.show();
-                    String d=student.getImage_link();
+
                 }
 
         });

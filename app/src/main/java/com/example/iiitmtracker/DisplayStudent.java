@@ -51,8 +51,6 @@ public class DisplayStudent extends AppCompatActivity {
     public TextView RoomNo;
     public TextView room_no_tv;
     public TextView Email;
-    public RatingBar rating_bar;
-    public TextView rating_tv;
     public TextView ProfileViews;
     public TextView profile_views_tv;
     public TextView email_tv;
@@ -84,8 +82,6 @@ public class DisplayStudent extends AppCompatActivity {
         room_no_tv = findViewById(R.id.room_no_tv);
         email_tv = findViewById(R.id.email_tv);
         tech_interests_tv = findViewById(R.id.tech_interests_tv);
-        rating_bar = findViewById(R.id.rating_bar);
-        rating_tv = findViewById(R.id.rating_tv);
         ProfileViews = findViewById(R.id.ProfileViews);
         profile_views_tv = findViewById(R.id.profile_views_tv);
         LinkedinUrl = findViewById(R.id.LinkedinUrl);
@@ -134,36 +130,6 @@ public class DisplayStudent extends AppCompatActivity {
 //                myDialog.show();
 //            }
 //        });
-        rating_tv.setText(student.getRating()+"/5");
-
-        rating_bar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float rating, boolean b) {
-                Log.d("rating","rating is: "+student.getRating());
-                float currRating = Float.parseFloat(student.getRating());
-                int people_rated = Integer.parseInt(student.getNo_of_people_rated());
-                people_rated+=1;
-                float newRating = ((currRating * (people_rated-1)) + rating) / (people_rated);
-                Map<String, Object> user = new HashMap<>();
-                user.put("rating",Float.toString(newRating));
-                user.put("no_of_people_rated", Integer.toString(people_rated));
-                db.collection("students").document(student.getId())
-                        .update(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if(task.isSuccessful()) {
-                            Log.d("firestore","document added");
-                            Toast.makeText(DisplayStudent.this, "Rated "+rating+"/5", Toast.LENGTH_SHORT).show();
-                        }
-                        else {
-                            Log.d("firestore","couldn't add document");
-                            Toast.makeText(DisplayStudent.this, "Please check your internet", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-                rating_tv.setText(String.valueOf(newRating)+"/5");
-            }
-        });
 
         if(student.getLinkedin_url().equalsIgnoreCase("")) {
             linkedin_url_tv.setText("N/A");

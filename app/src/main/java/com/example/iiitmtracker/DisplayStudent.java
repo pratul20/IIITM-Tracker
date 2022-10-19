@@ -30,6 +30,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -61,8 +62,8 @@ public class DisplayStudent extends AppCompatActivity {
     public String id;
     public FirebaseFirestore db;
     public int views;
-//    public Dialog myDialog;
-//    public ImageView popup_iv;
+    public Dialog myDialog;
+    public ImageView popup_iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,9 +88,9 @@ public class DisplayStudent extends AppCompatActivity {
         LinkedinUrl = findViewById(R.id.LinkedinUrl);
         linkedin_url_tv = findViewById(R.id.linkedin_url_tv);
         db = FirebaseFirestore.getInstance();
-//        myDialog = new Dialog(this);
-//        myDialog.setContentView(R.layout.imagepopup);
-//        popup_iv = myDialog.findViewById(R.id.popup_iv);
+        myDialog = new Dialog(this);
+        myDialog.setContentView(R.layout.imagepopup);
+        popup_iv = myDialog.findViewById(R.id.popup_iv);
 
         Bundle data = getIntent().getExtras();
         Student student = (Student) data.getParcelable("student");
@@ -122,6 +123,7 @@ public class DisplayStudent extends AppCompatActivity {
             Drawable d = getResources().getDrawable(R.drawable.user_icon);
             student_image_iv.setImageDrawable(d);
         }
+
 
 //        student_image_iv.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -235,12 +237,24 @@ public class DisplayStudent extends AppCompatActivity {
         }
         if(!student.getImage_link().isEmpty()) {
             Glide.with(this).load(student.getImage_link()).into(student_image_iv);
-//            Glide.with(this).load(student.getImage_link()).into(popup_iv);
+            Glide.with(this).load(student.getImage_link()).into(popup_iv);
         }
         else {
+
             Drawable d = getResources().getDrawable(R.drawable.user_icon);
             student_image_iv.setImageDrawable(d);
         }
+        student_image_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Picasso.get().load(student.getImage_link()).into(popup_iv);
+                    myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                    myDialog.show();
+
+                }
+
+        });
 
         display_student_bg = findViewById(R.id.display_student_bg);
         SharedPreferences sharedPreferences = getSharedPreferences("sharedPrefs", MODE_PRIVATE);
